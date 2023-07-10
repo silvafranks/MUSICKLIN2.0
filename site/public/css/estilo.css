@@ -24,6 +24,25 @@ body {
   height: var(--tamanho-header);
   border-bottom: 2px solid #FAF9F6;
 }
+.header_login {
+  height: var(--tamanho-header);
+  border-bottom: 2px solid #FAF9F6;
+}
+
+.header_login .container_login {
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #161617;
+}
+
+.container_login {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
 
 .header .container {
   position: relative;
@@ -48,6 +67,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  list-style: none;
+  color: #FAF9F6;
+}
+
+.navbar_conteudo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  color: #FAF9F6;
+}
+
+.navbar_login_cadastro {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   list-style: none;
   color: #FAF9F6;
 }
@@ -216,7 +253,7 @@ body {
   display: none
 }
 
-.alerta_erro{
+.alerta_erro {
   display: flex;
   justify-content: flex-end;
 }
@@ -233,17 +270,18 @@ body {
   margin-right: 10%;
 }
 
-.card_erro #mensagem_erro{
+.card_erro #mensagem_erro {
   font-weight: 500;
   font-size: 20px;
 }
 
 
 .footer {
+  position: relative;
   height: var(--tamanho-footer);
   width: 100%;
-  background-color: #32b9cd;
-  color: #fff;
+  background-color: #161617;
+  color: #FAF9F6;
 }
 
 .footer h4 {
@@ -251,6 +289,7 @@ body {
 }
 
 .footer .container {
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -268,7 +307,7 @@ body {
 
 .simulador .container {
   flex-direction: column;
-  overflow: scroll; 
+  overflow: scroll;
   height: var(--tamanho-simulador);
 }
 
@@ -282,10 +321,22 @@ body {
 
 .icon_login {
   width: 15%;
+  height: 15%;
 }
 
-.musicklin_brand {
-  margin-right: 22%;
+.brand_titulo {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.header_login a {
+  color: #FAF9F6;
+  text-decoration: none;
+}
+.container .gif_index {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
