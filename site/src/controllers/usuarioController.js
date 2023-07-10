@@ -31,7 +31,13 @@ function autenticar(req, res) {
                                         aquarios: resultadoAquarios
                                     });
                                 } else {
-                                    res.status(204).json({ aquarios: [] });
+                                    res.json({
+                                        id: resultadoAutenticar[0].id,
+                                        email: resultadoAutenticar[0].email,
+                                        nome: resultadoAutenticar[0].nome,
+                                        senha: resultadoAutenticar[0].senha,
+                                        aquarios: []
+                                    });
                                 }
                             })
                     } else if (resultadoAutenticar.length == 0) {

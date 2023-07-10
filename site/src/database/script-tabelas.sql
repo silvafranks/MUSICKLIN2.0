@@ -26,7 +26,7 @@ CREATE TABLE aviso (
 );
 
 create table aquario (
-/* em nossa regra de negócio, um aquario tem apenas um sensor */
+/* em nossa regra de negócio, um aquario tem apenas um sensotr */
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	descricao VARCHAR(300),
 	fk_usuario INT,

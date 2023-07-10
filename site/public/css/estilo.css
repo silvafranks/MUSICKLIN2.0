@@ -1,8 +1,9 @@
 body {
+  position: relative;
+  z-index: 1;
   margin: 0;
   padding: 0;
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
 }
 
 :root {
@@ -15,24 +16,27 @@ body {
 
 .container {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 .header {
   height: var(--tamanho-header);
-  border-bottom: 2px solid #32b9cd;
+  border-bottom: 2px solid #FAF9F6;
 }
 
 .header .container {
-  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
+  background-color: #161617;
 }
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: #FAF9F6;
 }
 
 .agora {
@@ -45,11 +49,11 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: #FAF9F6;
 }
 
 .titulo {
-  color: #32b9cd;
+  color: #FAF9F6;
   width: fit-content;
   font-weight: 500;
 }
@@ -72,7 +76,7 @@ body {
 
 .banner .container p {
   font-size: 36px;
-  color: white;
+  color: #FAF9F6;
   width: 280px;
 }
 
@@ -81,7 +85,7 @@ body {
 }
 
 .social {
-  background-color: #e5e5e5;
+  background-color: #FAF9F6;
   display: flex;
 }
 
@@ -114,8 +118,16 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  /* background-image: url('../assets/imgs/bg-jelly-fish-para-home.png'); */
   background-size: cover;
+}
+
+.container video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
 }
 
 .login .container {
@@ -125,14 +137,14 @@ body {
 }
 
 .card {
-  width: 30%;
-  background-color: #e5e5e5;
+  width: 45%;
+  background-color: #161617;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  color: palevioletred;
+  color: #62922e;
   row-gap: 20px;
 }
 
@@ -141,18 +153,19 @@ body {
 }
 
 .card-login {
-  height: 60%;
+  height: 90%;
 }
 
 .card h2 {
   margin: 0;
   font-size: 30px;
+  ;
 }
 
 .formulario {
   display: flex;
-  height: 90%;
-  width: 80%;
+  height: 60%;
+  width: 50%;
   justify-content: space-around;
   flex-direction: column;
 }
@@ -163,7 +176,7 @@ body {
 }
 
 .formulario input {
-  border: 2px solid #32b9cd;
+  border: 2px solid #62922e;
   height: 30px;
   text-align: center;
   border-radius: 10px;
@@ -182,8 +195,8 @@ body {
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
-  color: #fff;
-  background-color: #e6005a;
+  color: #FAF9F6;
+  background-color: #62922e;
   width: 120px;
   height: 30px;
   align-self: center;
@@ -225,6 +238,7 @@ body {
   font-size: 20px;
 }
 
+
 .footer {
   height: var(--tamanho-footer);
   width: 100%;
@@ -256,4 +270,22 @@ body {
   flex-direction: column;
   overflow: scroll; 
   height: var(--tamanho-simulador);
+}
+
+.container .card {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icon_login {
+  width: 15%;
+}
+
+.musicklin_brand {
+  margin-right: 22%;
+  display: flex;
+  align-items: center;
 }
